@@ -1,17 +1,22 @@
-student_count  = 11
 # prints lists of students first
+students = [ 
+  "Dr. Hannibal Lecter",
+  "Darth Vader",
+  "Nurse Racthed",
+  "Michael Corleone",
+  "Alex DeLarge",
+  "The Wicked Witch of the West",
+  "Terminator",
+  "Freddy Kreuger",
+  "The Joker",
+  "Joffery Baratheon", 
+  "Norman Bates"
+]
+# print all students
 puts "The students of Villains Academy"
 puts "------------"
-puts "Dr. Hannibal Lecter"
-puts "Darth Vader"
-puts "Nurse Racthed"
-puts "Michael Corleone"
-puts "Alex DeLarge"
-puts "The Wicked Witch of the West"
-puts "Terminator"
-puts "Freddy Kreuger"
-puts "The Joker"
-puts "Joffery Baratheon"
-puts "Norman Bates"
-# print total number of students with string interpolation.
-print "Overall, we have #{student_count} great students"
+students.each do |student|
+  puts student
+end
+# print total
+print "Overall, we have #{students.count} great students"
