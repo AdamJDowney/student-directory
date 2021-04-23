@@ -57,5 +57,4 @@ end
 def print_footer
   puts "Overall, we have #{@students.count} great students"
 end
-
 interactive_menu
